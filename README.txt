@@ -20,9 +20,9 @@ blood-center\
 कुछ बदलना हो तो
 ----------------
 1. blood-center\src\app.jsx खोलें और बदलाव करें
-2. build-blood.cmd चलाएँ (या: node build-blood.js)
+2. node build-blood.js चलाएँ (या: npm install के बाद npm run build)
    → इससे js\app.js अपने आप बन जाती है
-3. sw.js में CACHE का नंबर बढ़ाएँ (bcc-v31 → bcc-v32), वरना पुराना कैश दिखेगा
+3. sw.js में CACHE का नंबर बढ़ाएँ (जैसे bcc-v36 → bcc-v37), वरना पुराना कैश दिखेगा
 4. deploy करें (नीचे देखें)
 
 ⚠️ js\app.js को सीधे कभी न बदलें — अगली build में आपका बदलाव मिट जाएगा।
@@ -51,6 +51,16 @@ Root फ़ोल्डर (C:\Users\dell\Documents\Default Project) से:
   firebase deploy --only hosting,firestore:rules --config firebase.blood.json --project bloodbank-9b325
 
 ⚠️ हमेशा --config firebase.blood.json डालें।
+
+GitHub (कोड का बैकअप)
+----------------------
+रिपॉज़िटरी: https://github.com/sbbansal1958-lgtm/balaji-blood-center
+
+  git add -A
+  git commit -m "क्या बदला — छोटा विवरण"
+  git push
+
+बदलाव के बाद deploy करना न भूलें (ऊपर देखें)।
 
 लॉगिन
 ------
