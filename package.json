@@ -1,0 +1,12 @@
+{
+  "name": "balaji-blood-center",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Balaji Charitable Blood Centre — bilingual (Hindi/English) React PWA with Firebase cloud sync and admin panel",
+  "scripts": {
+    "build": "node build-blood.js"
+  },
+  "devDependencies": {
+    "@babel/standalone": "^7.26.0"
+  }
+}
